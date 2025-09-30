@@ -17,7 +17,7 @@
             <li><a href="#profile">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -36,7 +36,7 @@
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </div>
@@ -122,48 +122,82 @@
           <div class="skill">React</div>
         </div>
       </section>
-      <section id="experience">
-        <p class="section__text__p1">Explore</p>
-          <h2>My Experience</h2>
-          <div class="experience-item">
-              <h3>VMS Supervisor</h3>
-              <p>Accenture BDC14, Bengaluru, Karnataka</p>
-              <ul>
-                  <li>Manage the implementation and functionality of the Vendor Management System.</li>
-                  <li>Maintain relationships with vendors and ensure compliance with company policies.</li>
-                  <li>Track and analyze vendor performance metrics.</li>
-                  <li>Ensure adherence to regulations and generate reports for management.</li>
-                  <li>Troubleshoot system issues and coordinate with IT/support teams.</li>
-              </ul>
-          </div>
-      </section>
-      <section id="certifications">
-        <p class="section__text__p1">My Achievements</p>
-        <h1 class="title">Certifications</h1>
-        <div class="certifications-container">
+      <section id="projects">
+  <p class="section__text__p1">Explore</p>
+  <h2>My Projects</h2>
+  <div class="projects-container">
+
+    <div class="project-card">
+      <div class="project-content">
+        <h3>Portfolio Website</h3>
+        <p>Technologies: HTML, CSS, JavaScript</p>
+        <div class="project-description">
           <ul>
-            <li>Python Bootcamp</li>
-            <li>HTML & CSS Bootcamp</li>
-            <li>JavaScript Bootcamp</li>
-            <li>Introduction to Career Skills in Data Analytics</li>
-            <li>Python and Exploring ChatGPT</li>
-            <li>React Bootcamp</li>
-            <div id="moreCerts" style="display: none;">    
-              <li>Creative Thinking: Tools and Techniques</li>
-              <li>Introduction to Artificial Intelligence</li>
-              <li>Artificial Intelligence in 3 Hours</li>
-              <li>Machine Learning Fundamentals</li>
-              <li>Learn Machine Learning in 3 Hours</li>
-              <li>Artificial Intelligence and Machine Learning Training Course</li>
-              <li>Master Data Management for Beginners</li>
-              <li>DataPlus Overview Course - TCS</li>
-            </div>
+            <li>Designed and developed a responsive personal portfolio website to showcase academic and personal coding projects.</li>
+            <li>Implemented clean UI/UX principles, ensuring accessibility and professional presentation.</li>
+            <li>Serves as a central hub for highlighting technical skills, projects, and career aspirations.</li>
           </ul>
-          <div style="text-align: center; margin-top: 10px;">
-            <button id="seeMoreBtn" onclick="toggleCertifications()" style="background: none; border: none; color: inherit; text-decoration: underline; cursor: pointer;">See More</button>
-          </div>
+          <a href="https://abhaykrishnag.github.io/Portfolio/" target="_blank">🔗 View Project</a>
         </div>
-      </section>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h3>Movie Suggestion App (UI)</h3>
+        <p>Technologies: HTML, CSS, JavaScript, API</p>
+        <div class="project-description">
+          <ul>
+            <li>Developed an interactive movie recommendation platform that helps users discover films based on their preferences.</li>
+            <li>Integrated TMDb API to fetch real-time movie data (titles, genres, posters).</li>
+            <li>Created an engaging, dynamic UI for exploring movies seamlessly.</li>
+          </ul>
+          <a href="https://abhaykrishnag.github.io/Movie-Suggestion/" target="_blank">🔗 View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h3>Weather App using React</h3>
+        <p>Technologies: HTML, CSS, JavaScript, ReactJS, API</p>
+        <div class="project-description">
+          <ul>
+            <li>Built a dynamic weather app fetching real-time data from the OpenWeatherMap API.</li>
+            <li>Users can search cities and view conditions like temperature, humidity, and wind speed.</li>
+            <li>Implemented React hooks for efficient state management and async data fetching.</li>
+          </ul>
+          <a href="https://abhaykrishnag.github.io/React-Weather-App/" target="_blank">🔗 View Project</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="certifications">
+  <p class="section__text__p1">My Achievements</p>
+  <h1 class="title">Certifications</h1>
+  <div class="certifications-container">
+    <ul>
+      <li>Creative Thinking: Tools and Techniques</li>
+      <li>HTML & CSS Bootcamp</li>
+      <li>JavaScript Bootcamp</li>
+      <li>Python and Exploring ChatGPT</li>
+      <li>React Bootcamp</li>
+      <li>Artificial Intelligence and Machine Learning Training Course</li>
+    </ul>
+    <div style="text-align: center; margin-top: 10px;">
+      <button 
+        id="seeMoreBtn" 
+        onclick="window.open('https://drive.google.com/drive/folders/1VD5XgAckWGwsFHtGocGTtVzGZvOmy6vO?usp=drive_link','_blank')" 
+        style="background: none; border: none; color: inherit; text-decoration: underline; cursor: pointer;">
+        See More
+      </button>
+    </div>
+  </div>
+</section>
+
       <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
@@ -186,11 +220,24 @@
           </div>
         </div>
       </section>
-      <footer>
-        <p>Check My Resume for further details and contact.</p>
-        <p>Copyright &#169; 2025 Abhay Krishna. All Rights Reserved.</p>
-      </footer>
+      <footer style="background-color: #fafbfd; color: #fff; padding: 20px 0; text-align: center;">
+
+  
+  <div class="social-icons" style="margin: 15px 0;">
+    <a href="https://github.com/abhaykrishnag" target="_blank" style="margin: 0 10px;">
+      <img src="./assets/github.png" alt="GitHub" width="30" height="30">
+    </a>
+    <a href="https://x.com/abhaykrishnag" target="_blank" style="margin: 0 10px;">
+      <img src="./assets/X.png" alt="X" width="30" height="30">
+    </a>
+    <a href="https://www.instagram.com/abhaykrishna.g" target="_blank" style="margin: 0 10px;">
+      <img src="./assets/instagram.png" alt="Instagram" width="30" height="30">
+    </a>
+  </div>
+  <p>Check My Resume for further details and contact.</p>
+  <p>Copyright &#169; 2025 Abhay Krishna. All Rights Reserved.</p>
+</footer>
+
       <script src="script.js"></script>
     </body>
   </html>
-
