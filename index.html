@@ -1,0 +1,268 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>AK PORTFOLIO</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="mediaqueries.css" />
+      <link rel="icon" type="image/png" href="assets/ak.png">
+    </head>
+    <body>
+      <nav id="desktop-nav">
+        <div class="logo">Abhay Krishna</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Abhay Krishna</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img src="main.jpg" alt="Abhay Krishna profile picture" class="profile-pic" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">ABHAY KRISHNA</h1>
+          <p class="section__text__p2">I'm an <span class="blue-text">Aspiring Software Developer</span></p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/ABHAY KRISHNA.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Hire me
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <p class="section__text__p1">Get To Know More About Me</p>
+        <h1 class="title">My Qualification</h1>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon icon"
+                  class="icon"
+                />
+                <h3>Pursuing</h3>
+                <h4>Bachelor of Computer Application</h4>
+                <p>St Joseph's University,<br />Bengaluru, Karnataka<br />560027</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Completed</h3>
+                <h4>High School Diploma / Pre-University</h4>
+                <p>Vyasa Vidya Peethom,<br />Palakkad, Kerala<br />678701</p>
+              </div>
+            </div>
+            <h4>Summary</h4>
+            <div class="text-container">
+              <p>
+                  Final-year Computer Applications student skilled in Front-End Development, Python programming, and UI/UX
+design. Experienced with ReactJS, REST APIs, Git, and Figma. Capable of building responsive, user-centric
+interfaces and solving technical problems with clean, maintainable code. Seeking an internship or entry-level software
+developer role to apply technical skills and contribute to real-world projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills-section">
+        <p class="section__text__p1">My Strengths</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-container">
+          <div class="skill">Communication</div>
+          <div class="skill">Java</div>
+          <div class="skill">HTML & CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Time Management</div>
+          <div class="skill">Python</div>
+          <div class="skill">DBMS & MySQL</div>
+          <div class="skill">C</div>
+          <div class="skill">C#</div>
+          <div class="skill">MS Excel</div>
+          <div class="skill">Adaptability</div>
+          <div class="skill">Quick Learning</div>
+          <div class="skill">MS PowerPoint</div>
+          <div class="skill">Problem Resolution</div>
+          <div class="skill">React.js</div>
+          <div class="skill">Node.js</div>
+          <div class="skill">Figma</div>
+          <div class="skill">MongoDB</div>
+          <div class="skill">API Integration</div>
+          <div class="skill">N8N</div>
+          <div class="skill">Prompt Engineering</div>
+        </div>
+      </section>
+      <section id="projects">
+  <p class="section__text__p1">Explore</p>
+  <h2>My Projects</h2>
+  <div class="projects-container">
+
+    <div class="project-card">
+      <div class="project-content">
+        <h3>Portfolio Website</h3>
+        <p>Technologies: HTML, CSS, JavaScript</p>
+        <div class="project-description">
+          <ul>
+            <li>Designed and developed a responsive personal portfolio website to showcase academic and personal coding projects.</li>
+            <li>Implemented clean UI/UX principles, ensuring accessibility and professional presentation.</li>
+            <li>Serves as a central hub for highlighting technical skills, projects, and career aspirations.</li>
+          </ul>
+          <a href="https://abhaykrishnag.github.io/Portfolio/" target="_blank">🔗 View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h3>Movie Suggestion App (UI)</h3>
+        <p>Technologies: HTML, CSS, JavaScript, API</p>
+        <div class="project-description">
+          <ul>
+            <li>Developed an interactive movie recommendation platform that helps users discover films based on their preferences.</li>
+            <li>Integrated TMDb API to fetch real-time movie data (titles, genres, posters).</li>
+            <li>Created an engaging, dynamic UI for exploring movies seamlessly.</li>
+          </ul>
+          <a href="https://abhaykrishnag.github.io/Movie-Suggestion/" target="_blank">🔗 View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-content">
+        <h3>Weather App using React</h3>
+        <p>Technologies: HTML, CSS, JavaScript, ReactJS, API</p>
+        <div class="project-description">
+          <ul>
+            <li>Built a dynamic weather app fetching real-time data from the OpenWeatherMap API.</li>
+            <li>Users can search cities and view conditions like temperature, humidity, and wind speed.</li>
+            <li>Implemented React hooks for efficient state management and async data fetching.</li>
+          </ul>
+          <a href="https://abhaykrishnag.github.io/React-Weather-App/" target="_blank">🔗 View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+  <div class="project-content">
+    <h3>Smart'Q – Smart Queue Management System</h3>
+    <p>Technologies: HTML, CSS, JavaScript, Backend API</p>
+    <div class="project-description">
+      <ul>
+        <li>Developed a smart digital queue management system to reduce physical waiting time.</li>
+        <li>Allows users to join queues online and view real-time queue position updates.</li>
+        <li>Includes admin-side controls to manage counters and monitor queue flow.</li>
+        <li>Designed to improve efficiency in banks, hospitals, and service centers.</li>
+      </ul>
+      
+      <a href=" " target="_blank">🔗 On Progress</a>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+<section id="certifications">
+  <p class="section__text__p1">My Achievements</p>
+  <h1 class="title">Certifications</h1>
+  <div class="certifications-container">
+    <ul>
+      <li>Creative Thinking: Tools and Techniques</li>
+      <li>HTML & CSS Bootcamp</li>
+      <li>JavaScript Bootcamp</li>
+      <li>Python and Exploring ChatGPT</li>
+      <li>React Bootcamp</li>
+      <li>Artificial Intelligence and Machine Learning Training Course</li>
+    </ul>
+    <div style="text-align: center; margin-top: 10px;">
+      <button 
+        id="seeMoreBtn" 
+        onclick="window.open('https://drive.google.com/drive/folders/1VD5XgAckWGwsFHtGocGTtVzGZvOmy6vO?usp=drive_link','_blank')" 
+        style="background: none; border: none; color: inherit; text-decoration: underline; cursor: pointer;">
+        See More
+      </button>
+    </div>
+  </div>
+</section>
+
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">abhayganesh154@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/abhaykrishnag/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer style="background-color: #fafbfd; color: #fff; padding: 20px 0; text-align: center;">
+
+  
+  <div class="social-icons">
+  <a href="https://github.com/abhaykrishnag" target="_blank">
+    <img src="./assets/github.png" alt="GitHub" class="social-icon">
+  </a>
+  <a href="https://x.com/abhaykrishnag" target="_blank">
+    <img src="./assets/X.png" alt="X" class="social-icon">
+  </a>
+  <a href="https://www.instagram.com/abhaykrishna.g" target="_blank">
+    <img src="./assets/instagram.png" alt="Instagram" class="social-icon">
+  </a>
+</div>
+  <p>Check My LinkedIn for further details and contact.</p>
+  <p>Copyright &#169; 2025 Abhay Krishna. All Rights Reserved.</p>
+</footer>
+
+      <script src="script.js"></script>
+    </body>
+  </html>
