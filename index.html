@@ -5,13 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AK PORTFOLIO</title>
+  <title>Abhay Krishna | Backend Developer</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./mediaqueries.css">
   <link rel="icon" type="image/png" href="assets/ak.png">
 </head>
 
 <body>
+
+  <!-- ================= NAVIGATION ================= -->
+
   <nav id="desktop-nav">
     <div class="logo">Abhay Krishna</div>
     <div>
@@ -20,222 +23,245 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#ai">AI Focus</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Abhay Krishna</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-        <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
+
+  <!-- ================= PROFILE ================= -->
+
   <section id="profile">
     <div class="section__pic-container">
       <img src="./main.jpg" alt="Abhay Krishna profile picture" class="profile-pic" />
     </div>
+
     <div class="section__text">
       <p class="section__text__p1">Hello, I'm</p>
       <h1 class="title">ABHAY KRISHNA</h1>
-      <p class="section__text__p2">I'm an <span class="blue-text">Aspiring Software Developer</span></p>
+      <p class="section__text__p2">
+        Backend Developer | <span class="blue-text">AI-Augmented Engineer</span>
+      </p>
+
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/ABHAY KRISHNA.pdf')">
+        <button class="btn btn-color-2"
+          onclick="window.open('./assets/ABHAYKRISHNA_CV.pdf')">
           Download CV
         </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        <button class="btn btn-color-1"
+          onclick="location.href='./#contact'">
           Hire me
         </button>
       </div>
     </div>
   </section>
+
+  <!-- ================= ABOUT ================= -->
+
   <section id="about">
-    <p class="section__text__p1">Get To Know More About Me</p>
-    <h1 class="title">My Qualification</h1>
+    <p class="section__text__p1">Professional Overview</p>
+    <h1 class="title">About Me</h1>
+
     <div class="section-container">
       <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon icon" class="icon" />
-            <h3>Pursuing</h3>
-            <h4>Bachelor of Computer Application</h4>
-            <p>St Joseph's University,<br />Bengaluru, Karnataka<br />560027</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Completed</h3>
-            <h4>High School Diploma / Pre-University</h4>
-            <p>Vyasa Vidya Peethom,<br />Palakkad, Kerala<br />678701</p>
-          </div>
-        </div>
-        <h4>Summary</h4>
+
         <div class="text-container">
           <p>
-            Final-year Computer Applications student skilled in Front-End Development, Python programming, and UI/UX
-            design. Experienced with ReactJS, REST APIs, Git, and Figma. Capable of building responsive, user-centric
-            interfaces and solving technical problems with clean, maintainable code. Seeking an internship or
-            entry-level software
-            developer role to apply technical skills and contribute to real-world projects.
+            Backend-focused developer specializing in Node.js and real-time web systems.
+            Experienced in designing REST APIs, implementing JWT-based authentication,
+            and building WebSocket-driven live update systems. Proficient in MySQL and
+            MongoDB for schema design and data modeling.
+          </p>
+
+          <p>
+            I integrate AI tools such as Claude, Cursor, Antigravity, Codewiki,
+            Bubble, and Lovable into the engineering workflow for architecture
+            validation, backend refactoring, documentation generation, and
+            system optimization. Currently expanding into Generative AI systems,
+            RAG architectures, and automation workflows using n8n.
           </p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- ================= SKILLS ================= -->
+
   <section id="skills" class="skills-section">
-    <p class="section__text__p1">My Strengths</p>
-    <h1 class="title">Skills</h1>
+    <p class="section__text__p1">Core Capabilities</p>
+    <h1 class="title">Technical Skills</h1>
+
     <div class="skills-container">
-      <div class="skill">Communication</div>
-      <div class="skill">Java</div>
-      <div class="skill">HTML & CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Time Management</div>
-      <div class="skill">Python</div>
-      <div class="skill">DBMS & MySQL</div>
-      <div class="skill">C</div>
-      <div class="skill">C#</div>
-      <div class="skill">MS Excel</div>
-      <div class="skill">Adaptability</div>
-      <div class="skill">Quick Learning</div>
-      <div class="skill">MS PowerPoint</div>
-      <div class="skill">Problem Resolution</div>
-      <div class="skill">React.js</div>
       <div class="skill">Node.js</div>
-      <div class="skill">Figma</div>
+      <div class="skill">Express.js</div>
+      <div class="skill">REST API Design</div>
+      <div class="skill">WebSockets (Socket.IO)</div>
+      <div class="skill">JWT Authentication</div>
+      <div class="skill">MySQL</div>
       <div class="skill">MongoDB</div>
-      <div class="skill">API Integration</div>
-      <div class="skill">N8N</div>
-      <div class="skill">Prompt Engineering</div>
+      <div class="skill">React.js</div>
+      <div class="skill">JavaScript (ES6)</div>
+      <div class="skill">TypeScript (Basic)</div>
+      <div class="skill">Postman</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">Vercel</div>
+      <div class="skill">Cursor</div>
+      <div class="skill">Claude</div>
+      <div class="skill">Antigravity</div>
+      <div class="skill">Codewiki</div>
+      <div class="skill">n8n (Exploring)</div>
     </div>
   </section>
+
+  <!-- ================= PROJECTS ================= -->
+
   <section id="projects">
-    <p class="section__text__p1">Explore</p>
-    <h2>My Projects</h2>
+    <p class="section__text__p1">Engineering Work</p>
+    <h2>Projects</h2>
+
     <div class="projects-container">
 
+      <!-- SmartQ -->
       <div class="project-card">
         <div class="project-content">
-          <h3>Portfolio Website</h3>
-          <p>Technologies: HTML, CSS, JavaScript</p>
+          <h3>Smart'Q – Real Time Queue Management System</h3>
+          <p>Tech: Node.js, Express.js, MySQL, JWT, WebSockets, ReactJS</p>
           <div class="project-description">
             <ul>
-              <li>Designed and developed a responsive personal portfolio website to showcase academic and personal
-                coding projects.</li>
-              <li>Implemented clean UI/UX principles, ensuring accessibility and professional presentation.</li>
-              <li>Serves as a central hub for highlighting technical skills, projects, and career aspirations.</li>
+              <li>Leading backend development in a 3-member team, responsible for API architecture and database design.</li>
+              <li>Designed relational schema for queue, token, user, and service counter management.</li>
+              <li>Implemented secure JWT-based authentication with role-based access control.</li>
+              <li>Built RESTful APIs for queue creation, token generation, and status tracking.</li>
+              <li>Engineered WebSocket-based real-time queue position updates and live token broadcasting.</li>
+              <li>Integrated AI-assisted architectural validation and backend refactoring workflows.</li>
+              <li>Exploring n8n automation for real-time notifications and reporting systems.</li>
             </ul>
-            <a href="https://abhaykrishna.vercel.app/" target="_blank">🔗 View Project</a>
+            <a href="#" target="_blank"> In Progress</a>
           </div>
         </div>
       </div>
 
+      <!-- Huefit -->
+    <div class="project-card">
+      <div class="project-content">
+        <h3>Huefit – AI Assisted Outfit Optimization Platform</h3>
+        <p>Tech: Antigravity, AI-Assisted Architecture, Modular Backend Design</p>
+        <div class="project-description">
+          <ul>
+            <li>Designed and structured platform architecture using Antigravity for AI-guided system planning.</li>
+            <li>Applied AIassisted backend refinement for modular feature implementation and workflow optimization.</li>
+            <li>Leveraged AI tools for structured debugging, rapid prototyping, and documentation generation.</li>
+            <li>Focused on scalable system design principles and clean backend logic structuring.</li>
+          </ul>
+          <a href="https://hue-fit.vercel.app/" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+
+      <!-- Movie App -->
       <div class="project-card">
         <div class="project-content">
-          <h3>Movie Suggestion App (UI)</h3>
-          <p>Technologies: HTML, CSS, JavaScript, API</p>
+          <h3>Movie Suggestion Application</h3>
+          <p>Tech: JavaScript, REST APIs</p>
           <div class="project-description">
             <ul>
-              <li>Developed an interactive movie recommendation platform that helps users discover films based on their
-                preferences.</li>
-              <li>Integrated TMDb API to fetch real-time movie data (titles, genres, posters).</li>
-              <li>Created an engaging, dynamic UI for exploring movies seamlessly.</li>
+              <li>Integrated TMDb API for dynamic movie discovery and search.</li>
+              <li>Implemented optimized client-side data handling and filtering logic.</li>
+              <li>Structured API consumption patterns and JSON parsing mechanisms.</li>
             </ul>
-            <a href="https://abhaykrishnag.github.io/Movie-Suggestion/" target="_blank">🔗 View Project</a>
+            <a href="https://abhaykrishnag.github.io/Movie-Suggestion/" target="_blank"> View Project</a>
           </div>
         </div>
       </div>
 
+      <!-- Weather -->
       <div class="project-card">
         <div class="project-content">
-          <h3>Weather App using React</h3>
-          <p>Technologies: HTML, CSS, JavaScript, ReactJS, API</p>
+          <h3>Weather Application (React)</h3>
+          <p>Tech: ReactJS, OpenWeatherMap API</p>
           <div class="project-description">
             <ul>
-              <li>Built a dynamic weather app fetching real-time data from the OpenWeatherMap API.</li>
-              <li>Users can search cities and view conditions like temperature, humidity, and wind speed.</li>
-              <li>Implemented React hooks for efficient state management and async data fetching.</li>
+              <li>Built API-driven weather dashboard with async data fetching.</li>
+              <li>Implemented structured error handling and loading states.</li>
+              <li>Applied React hooks for state and lifecycle management.</li>
             </ul>
-            <a href="https://abhaykrishnag.github.io/React-Weather-App/" target="_blank">🔗 View Project</a>
+            <a href="https://abhaykrishnag.github.io/React-Weather-App/" target="_blank"> View Project</a>
           </div>
         </div>
       </div>
-
-      <div class="project-card">
-        <div class="project-content">
-          <h3>Smart'Q – Smart Queue Management System</h3>
-          <p>Technologies: HTML, CSS, JavaScript, Backend API</p>
-          <div class="project-description">
-            <ul>
-              <li>Developed a smart digital queue management system to reduce physical waiting time.</li>
-              <li>Allows users to join queues online and view real-time queue position updates.</li>
-              <li>Includes admin-side controls to manage counters and monitor queue flow.</li>
-              <li>Designed to improve efficiency in banks, hospitals, and service centers.</li>
-            </ul>
-
-            <a href=" " target="_blank">🔗 On Progress</a>
-          </div>
-        </div>
-      </div>
-
 
     </div>
   </section>
+
+  <!-- ================= AI SECTION ================= -->
+
+  <section id="ai">
+    <p class="section__text__p1">Engineering Direction</p>
+    <h1 class="title">AI-Augmented Development</h1>
+
+    <div class="text-container">
+      <p>I view AI not as a replacement for engineering rigor, 
+        but as an augmentation layer that enhances decision making, system design validation, and development velocity. 
+        My focus is on building deterministic backend systems that intelligently integrate probabilistic AI components.
+</p>
+      <p>
+        I actively integrate AI tools into the software development lifecycle
+        for architecture planning, backend refactoring, documentation generation,
+        and structured debugging.
+      </p>
+
+      <p>
+        Currently expanding toward Generative AI backend systems with focus on
+        Retrieval-Augmented Generation (RAG), LLM-backed integrations, and
+        workflow automation using n8n.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATIONS ================= -->
 
   <section id="certifications">
-    <p class="section__text__p1">My Achievements</p>
+    <p class="section__text__p1">Credentials</p>
     <h1 class="title">Certifications</h1>
+
     <div class="certifications-container">
       <ul>
-        <li>Creative Thinking: Tools and Techniques</li>
-        <li>HTML & CSS Bootcamp</li>
-        <li>JavaScript Bootcamp</li>
-        <li>Python and Exploring ChatGPT</li>
-        <li>React Bootcamp</li>
+        <li>Responsible Generative AI (Microsoft)</li>
+        <li>Introduction to Large Language Models</li>
         <li>Artificial Intelligence and Machine Learning Training Course</li>
+        <li>Machine Learning Fundamentals</li>
+        <li>Python and Exploring ChatGPT</li>
+        <li>Creative Thinking: Tools and Techniques</li>
       </ul>
-      <div style="text-align: center; margin-top: 10px;">
-        <button id="seeMoreBtn"
-          onclick="window.open('https://drive.google.com/drive/folders/1VD5XgAckWGwsFHtGocGTtVzGZvOmy6vO?usp=drive_link','_blank')"
-          style="background: none; border: none; color: inherit; text-decoration: underline; cursor: pointer;">
-          See More
-        </button>
-      </div>
     </div>
   </section>
+
+  <!-- ================= CONTACT ================= -->
 
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
+    <h1 class="title">Contact</h1>
+
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
         <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:examplemail@gmail.com">abhayganesh154@gmail.com</a></p>
+        <p><a href="mailto:abhayganesh154@gmail.com">abhayganesh154@gmail.com</a></p>
       </div>
+
       <div class="contact-info-container">
         <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
         <p><a href="https://www.linkedin.com/in/abhaykrishnag/">LinkedIn</a></p>
       </div>
     </div>
   </section>
-  <footer style="background-color: #fafbfd; color: #fff; padding: 20px 0; text-align: center;">
 
+  <!-- ================= FOOTER ================= -->
 
+  <footer>
     <div class="social-icons">
       <a href="https://github.com/abhaykrishnag" target="_blank">
-        <img src="./assets/github.png"" alt=" GitHub" class="social-icon">
+        <img src="./assets/github.png" alt="GitHub" class="social-icon">
       </a>
       <a href="https://x.com/abhaykrishnag" target="_blank">
         <img src="./assets/X.png" alt="X" class="social-icon">
@@ -244,11 +270,11 @@
         <img src="./assets/instagram.png" alt="Instagram" class="social-icon">
       </a>
     </div>
-    <p>Check My LinkedIn for further details and contact.</p>
-    <p>Copyright &#169; 2025 Abhay Krishna. All Rights Reserved.</p>
+
+    <p>© 2025 Abhay Krishna. All Rights Reserved.</p>
   </footer>
 
   <script src="./script.js"></script>
-</body>
 
+</body>
 </html>
