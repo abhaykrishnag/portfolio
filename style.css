@@ -164,8 +164,8 @@ a:hover {
   align-items: center;
   gap: 5rem;
   min-height: 80vh;
-  margin-bottom: 180px;
-  padding-top: 60px;
+  margin-bottom: 10px;
+  padding-top: 0;
 }
 
 .section__pic-container {
@@ -270,7 +270,7 @@ a:hover {
   position: relative;
   margin: 40px auto;
   padding: 90px;
-  padding-top: 150px;
+  padding-top: 100px;
   width: 90%;
   max-width: 1200px;
   min-height: 300px;
