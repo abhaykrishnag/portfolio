@@ -1,281 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abhay Krishna | Backend Developer</title>
+  <title>Abhay Krishna | Backend Engineer</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./mediaqueries.css">
   <link rel="icon" type="image/png" href="assets/ak.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <!-- ================= NAVIGATION ================= -->
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
+  <!-- ===== NOISE OVERLAY ===== -->
+  <div class="noise-overlay"></div>
+
+  <!-- ===== NAV ===== -->
   <nav id="desktop-nav">
-    <div class="logo">Abhay Krishna</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#profile">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#ai">AI Focus</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <div class="logo">
+      <span class="logo-bracket">[</span>AK<span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#profile"><span class="nav-num">00.</span>Home</a></li>
+      <li><a href="#about"><span class="nav-num">01.</span>About</a></li>
+      <li><a href="#skills"><span class="nav-num">02.</span>Skills</a></li>
+      <li><a href="#projects"><span class="nav-num">03.</span>Projects</a></li>
+      <li><a href="#ai"><span class="nav-num">04.</span>AI Focus</a></li>
+      <li><a href="#certifications"><span class="nav-num">05.</span>Certifications</a></li>
+      <li><a href="#contact"><span class="nav-num">06.</span>Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HAMBURGER NAV ===== -->
+  <nav id="hamburger-nav">
+    <div class="logo"><span class="logo-bracket">[</span>AK<span class="logo-bracket">]</span></div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#ai" onclick="toggleMenu()">AI Focus</a></li>
+        <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
     </div>
   </nav>
 
-  <!-- ================= PROFILE ================= -->
-
+  <!-- ===== HERO ===== -->
   <section id="profile">
-    <div class="section__pic-container">
-      <img src="./main.jpg" alt="Abhay Krishna profile picture" class="profile-pic" />
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-terminal" data-scroll-reveal>
+      <div class="terminal-bar">
+        <span class="t-dot red"></span>
+        <span class="t-dot yellow"></span>
+        <span class="t-dot green"></span>
+        <span class="t-title">~/abhay-krishna — bash</span>
+      </div>
+      <div class="terminal-body">
+        <div class="t-line"><span class="t-prompt">$ </span><span class="t-cmd typed" data-text="whoami"></span></div>
+        <div class="t-output">Abhay Krishna — Backend Engineer</div>
+        <div class="t-line"><span class="t-prompt">$ </span><span class="t-cmd typed2" data-text="cat role.txt"></span></div>
+        <div class="t-output">Node.js · REST APIs · WebSockets · AI-Augmented Dev</div>
+        <div class="t-line"><span class="t-prompt">$ </span><span class="t-cursor-blink">▋</span></div>
+      </div>
     </div>
 
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">ABHAY KRISHNA</h1>
-      <p class="section__text__p2">
-        Backend Developer | <span class="blue-text">AI-Augmented Engineer</span>
-      </p>
-
+    <div class="hero-content" data-scroll-reveal>
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">ABHAY<br><span class="name-accent">KRISHNA</span></h1>
+      <p class="hero-role">Backend Engineer <span class="pipe">|</span> <span class="accent-text">Aspiring AI Engineer</span></p>
       <div class="btn-container">
-        <button class="btn btn-color-2"
-          onclick="window.open('./assets/ABHAYKRISHNA_CV.pdf')">
-          Download CV
+        <button class="btn btn-primary" onclick="window.open('./assets/ABHAYKRISHNA_CV.pdf')">
+          <span class="btn-icon">↓</span> Download CV
         </button>
-        <button class="btn btn-color-1"
-          onclick="location.href='./#contact'">
-          Hire me
+        <button class="btn btn-ghost" onclick="location.href='./#contact'">
+          Hire me <span class="btn-arrow">→</span>
         </button>
       </div>
     </div>
   </section>
 
-  <!-- ================= ABOUT ================= -->
-
+  <!-- ===== ABOUT ===== -->
   <section id="about">
-    <p class="section__text__p1">Professional Overview</p>
-    <h1 class="title">About Me</h1>
+    <div class="section-header" data-scroll-reveal>
+      <span class="section-tag">// 01</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
 
-    <div class="section-container">
-      <div class="about-details-container">
+    <div class="about-grid" data-scroll-reveal>
+      <div class="about-card">
+        <div class="card-icon"> </div>
+        <h3>Backend Systems</h3>
+        <p>Backend-focused developer specializing in Node.js and real-time web systems. Designing REST APIs, JWT-based authentication, and WebSocket-driven live update systems.</p>
+      </div>
+      <div class="about-card">
+        <div class="card-icon"> </div>
+        <h3>Data Layer</h3>
+        <p>Proficient in MySQL and MongoDB for schema design and data modeling — from relational structures to flexible document-based architectures.</p>
+      </div>
+      <div class="about-card">
+        <div class="card-icon"> </div>
+        <h3>AI Integration</h3>
+        <p>Integrating Claude, Cursor, Antigravity, Codewiki, Bubble, and Lovable into engineering workflows. Expanding into RAG architectures and n8n automation.</p>
+      </div>
+    </div>
 
-        <div class="text-container">
-          <p>
-            Backend-focused developer specializing in Node.js and real-time web systems.
-            Experienced in designing REST APIs, implementing JWT-based authentication,
-            and building WebSocket-driven live update systems. Proficient in MySQL and
-            MongoDB for schema design and data modeling.
-          </p>
+    <div class="about-bio" data-scroll-reveal>
+      <div class="bio-code">
+        <pre><code><span class="code-keyword">const</span> <span class="code-var">engineer</span> = {
+  <span class="code-prop">name</span>: <span class="code-str">"Abhay Krishna"</span>,
+  <span class="code-prop">focus</span>: <span class="code-str">"Backend + AI Systems"</span>,
+  <span class="code-prop">stack</span>: [<span class="code-str">"Node.js"</span>, <span class="code-str">"Express"</span>, <span class="code-str">"MySQL"</span>, <span class="code-str">"MongoDB"</span>],
+  <span class="code-prop">exploring</span>: [<span class="code-str">"RAG"</span>, <span class="code-str">"LLM APIs"</span>, <span class="code-str">"n8n"</span>],
+  <span class="code-prop">available</span>: <span class="code-bool">true</span>
+};</code></pre>
+      </div>
+    </div>
+  </section>
 
-          <p>
-            I integrate AI tools such as Claude, Cursor, Antigravity, Codewiki,
-            Bubble, and Lovable into the engineering workflow for architecture
-            validation, backend refactoring, documentation generation, and
-            system optimization. Currently expanding into Generative AI systems,
-            RAG architectures, and automation workflows using n8n.
-          </p>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="section-header" data-scroll-reveal>
+      <span class="section-tag">// 02</span>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-grid" data-scroll-reveal>
+      <div class="skill-group">
+        <h4 class="skill-group-title"><span class="skill-dot"></span>Backend</h4>
+        <div class="skill-pills">
+          <span class="skill-pill core">Node.js</span>
+          <span class="skill-pill core">Express.js</span>
+          <span class="skill-pill core">REST API Design</span>
+          <span class="skill-pill core">WebSockets</span>
+          <span class="skill-pill core">JWT Auth</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4 class="skill-group-title"><span class="skill-dot db"></span>Databases</h4>
+        <div class="skill-pills">
+          <span class="skill-pill db">MySQL</span>
+          <span class="skill-pill db">MongoDB</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4 class="skill-group-title"><span class="skill-dot frontend"></span>Frontend</h4>
+        <div class="skill-pills">
+          <span class="skill-pill frontend">React.js</span>
+          <span class="skill-pill frontend">JavaScript ES6</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4 class="skill-group-title"><span class="skill-dot tools"></span>Tools & AI</h4>
+        <div class="skill-pills">
+          <span class="skill-pill tools">Git & GitHub</span>
+          <span class="skill-pill tools">Postman</span>
+          <span class="skill-pill tools">Vercel</span>
+          <span class="skill-pill tools">Render</span>
+          <span class="skill-pill tools">Claude</span>
+          <span class="skill-pill tools">n8n</span>
+          <span class="skill-pill tools">Antigravity</span>
+          <span class="skill-pill tools">Zapier</span>
+          <span class="skill-pill tools">Cursor</span>
+
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= SKILLS ================= -->
-
-  <section id="skills" class="skills-section">
-    <p class="section__text__p1">Core Capabilities</p>
-    <h1 class="title">Technical Skills</h1>
-
-    <div class="skills-container">
-      <div class="skill">Node.js</div>
-      <div class="skill">Express.js</div>
-      <div class="skill">REST API Design</div>
-      <div class="skill">WebSockets (Socket.IO)</div>
-      <div class="skill">JWT Authentication</div>
-      <div class="skill">MySQL</div>
-      <div class="skill">MongoDB</div>
-      <div class="skill">React.js</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Python</div>
-      <div class="skill">TypeScript (Basic)</div>
-      <div class="skill">Postman</div>
-      <div class="skill">Git & GitHub</div>
-      <div class="skill">Vercel</div>
-      <div class="skill">Cursor</div>
-      <div class="skill">Claude</div>
-      <div class="skill">Antigravity</div>
-      <div class="skill">Codewiki</div>
-      <div class="skill">n8n</div>
-    </div>
-  </section>
-
-  <!-- ================= PROJECTS ================= -->
-
+  <!-- ===== PROJECTS ===== -->
   <section id="projects">
-    <p class="section__text__p1">Engineering Work</p>
-    <h2>Projects</h2>
-
-    <div class="projects-container">
-
-      <!-- SmartQ -->
-      <div class="project-card">
-        <div class="project-content">
-          <h3>Smart'Q – Real Time Queue Management System</h3>
-          <p>Tech: Node.js, Express.js, MySQL, JWT, WebSockets, ReactJS</p>
-          <div class="project-description">
-            <ul>
-              <li>Leading backend development in a 3-member team, responsible for API architecture and database design.</li>
-              <li>Designed relational schema for queue, token, user, and service counter management.</li>
-              <li>Implemented secure JWT-based authentication with role-based access control.</li>
-              <li>Built RESTful APIs for queue creation, token generation, and status tracking.</li>
-              <li>Engineered WebSocket-based real-time queue position updates and live token broadcasting.</li>
-              <li>Integrated AI-assisted architectural validation and backend refactoring workflows.</li>
-              <li>Exploring n8n automation for real-time notifications and reporting systems.</li>
-            </ul>
-            <a href="#" target="_blank"> In Progress</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Huefit -->
-    <div class="project-card">
-      <div class="project-content">
-        <h3>Huefit – AI Assisted Outfit Optimization Platform</h3>
-        <p>Tech: Antigravity, AI-Assisted Architecture, Modular Backend Design</p>
-        <div class="project-description">
-          <ul>
-            <li>Designed and structured platform architecture using Antigravity for AI-guided system planning.</li>
-            <li>Applied AIassisted backend refinement for modular feature implementation and workflow optimization.</li>
-            <li>Leveraged AI tools for structured debugging, rapid prototyping, and documentation generation.</li>
-            <li>Focused on scalable system design principles and clean backend logic structuring.</li>
-          </ul>
-          <a href="https://hue-fit.vercel.app/" target="_blank">View Project</a>
-        </div>
-      </div>
+    <div class="section-header" data-scroll-reveal>
+      <span class="section-tag">// 03</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
     </div>
 
-      <!-- Movie App -->
-      <div class="project-card">
-        <div class="project-content">
-          <h3>Movie Suggestion Application</h3>
-          <p>Tech: JavaScript, REST APIs</p>
-          <div class="project-description">
-            <ul>
-              <li>Integrated TMDb API for dynamic movie discovery and search.</li>
-              <li>Implemented optimized client-side data handling and filtering logic.</li>
-              <li>Structured API consumption patterns and JSON parsing mechanisms.</li>
-            </ul>
-            <a href="https://abhaykrishnag.github.io/Movie-Suggestion/" target="_blank"> View Project</a>
+    <div class="projects-list">
+
+      <div class="project-item" data-scroll-reveal>
+        <div class="project-meta">
+          <span class="project-num">01</span>
+          <div class="project-tags">
+            <span>Node.js</span><span>MySQL</span><span>WebSockets</span><span>React</span>
           </div>
+          <span class="project-status wip">In Progress</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Smart'Q <span class="project-subtitle">Real-Time Queue Management</span></h3>
+          <p class="project-desc">Leading backend development in a 3-member team. Designed relational schema for queue, token, user, and service counter management. Engineered WebSocket-based real-time broadcasting and JWT role-based access control. Integrating n8n for automated notifications.</p>
+          <div class="project-highlights">
+            <span>⚡ Real-time broadcasting</span>
+            <span>🔐 JWT RBAC</span>
+            <span>🗄️ Relational schema design</span>
+            <span>🤖 AI-validated architecture</span>
+          </div>
+          <a href="https://smartq-system.vercel.app/" class="project-link disabled">View Project ↗</a>
         </div>
       </div>
 
-      <!-- Weather -->
-      <div class="project-card">
-        <div class="project-content">
-          <h3>Weather Application (React)</h3>
-          <p>Tech: ReactJS, OpenWeatherMap API</p>
-          <div class="project-description">
-            <ul>
-              <li>Built API-driven weather dashboard with async data fetching.</li>
-              <li>Implemented structured error handling and loading states.</li>
-              <li>Applied React hooks for state and lifecycle management.</li>
-            </ul>
-            <a href="https://abhaykrishnag.github.io/React-Weather-App/" target="_blank"> View Project</a>
+      <div class="project-item" data-scroll-reveal>
+        <div class="project-meta">
+          <span class="project-num">02</span>
+          <div class="project-tags">
+            <span>Antigravity</span><span>AI Architecture</span><span>Modular Backend</span>
           </div>
+          <span class="project-status live">Live</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Huefit <span class="project-subtitle">AI Outfit Optimization Platform</span></h3>
+          <p class="project-desc">Designed and structured platform architecture using Antigravity for AI-guided system planning. Applied AI-assisted backend refinement for modular feature implementation, workflow optimization, structured debugging, and documentation generation.</p>
+          <div class="project-highlights">
+            <span>🧠 AI-guided architecture</span>
+            <span>🔧 Modular backend</span>
+            <span>📦 Rapid prototyping</span>
+          </div>
+          <a href="https://hue-fit.vercel.app/" target="_blank" class="project-link">View Project ↗</a>
+        </div>
+      </div>
+
+      <div class="project-item" data-scroll-reveal>
+        <div class="project-meta">
+          <span class="project-num">03</span>
+          <div class="project-tags">
+            <span>JavaScript</span><span>TMDb API</span><span>REST</span>
+          </div>
+          <span class="project-status live">Live</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Movie Suggester <span class="project-subtitle">API-Driven Discovery</span></h3>
+          <p class="project-desc">TMDb API integration for dynamic movie discovery with optimized client-side data handling, filtering logic, and structured JSON parsing mechanisms.</p>
+          <div class="project-highlights">
+            <span>🎬 TMDb integration</span>
+            <span>⚡ Client-side optimization</span>
+          </div>
+          <a href="https://abhaykrishnag.github.io/Movie-Suggestion/" target="_blank" class="project-link">View Project ↗</a>
+        </div>
+      </div>
+
+      <div class="project-item" data-scroll-reveal>
+        <div class="project-meta">
+          <span class="project-num">04</span>
+          <div class="project-tags">
+            <span>React</span><span>OpenWeatherMap</span><span>Async</span>
+          </div>
+          <span class="project-status live">Live</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Weather App <span class="project-subtitle">React Dashboard</span></h3>
+          <p class="project-desc">API-driven weather dashboard with async data fetching, structured error handling, loading states, and React hooks for state and lifecycle management.</p>
+          <div class="project-highlights">
+            <span>⚛️ React hooks</span>
+            <span>🌤️ Live weather data</span>
+          </div>
+          <a href="https://abhaykrishnag.github.io/React-Weather-App/" target="_blank" class="project-link">View Project ↗</a>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- ================= AI SECTION ================= -->
-
+  <!-- ===== AI SECTION ===== -->
   <section id="ai">
-    <p class="section__text__p1">Engineering Direction</p>
-    <h1 class="title">AI-Augmented Development</h1>
+    <div class="section-header" data-scroll-reveal>
+      <span class="section-tag">// 04</span>
+      <h2 class="section-title">AI-Augmented Development</h2>
+      <div class="section-line"></div>
+    </div>
 
-    <div class="text-container">
-      <p>I view AI not as a replacement for engineering rigor, 
-        but as an augmentation layer that enhances decision making, system design validation, and development velocity. 
-        My focus is on building deterministic backend systems that intelligently integrate probabilistic AI components.
-</p>
-      <p>
-        I actively integrate AI tools into the software development lifecycle
-        for architecture planning, backend refactoring, documentation generation,
-        and structured debugging.
-      </p>
+    <div class="ai-content" data-scroll-reveal>
+      <div class="ai-philosophy">
+        <div class="ai-quote">
+          <span class="quote-mark">"</span>
+          AI is not a replacement for engineering rigor — it's an augmentation layer that enhances decision making, system design validation, and development velocity.
+        </div>
+        <p>My focus is on building <strong>deterministic backend systems</strong> that intelligently integrate probabilistic AI components.</p>
+      </div>
 
-      <p>
-        Currently expanding toward Generative AI backend systems with focus on
-        Retrieval-Augmented Generation (RAG), LLM-backed integrations, and
-        workflow automation using n8n.
-      </p>
+      <div class="ai-tools-grid">
+        <div class="ai-tool-card" data-scroll-reveal>
+          <div class="ai-tool-icon">🏗️</div>
+          <h4>Architecture Validation</h4>
+          <p>Using Claude and Cursor to validate API designs and system architecture before implementation.</p>
+        </div>
+        <div class="ai-tool-card" data-scroll-reveal>
+          <div class="ai-tool-icon">🔄</div>
+          <h4>Workflow Automation</h4>
+          <p>Exploring n8n for end-to-end workflow automation, notification systems, and reporting pipelines.</p>
+        </div>
+        <div class="ai-tool-card" data-scroll-reveal>
+          <div class="ai-tool-icon">📚</div>
+          <h4>RAG & LLM Systems</h4>
+          <p>Expanding into Retrieval-Augmented Generation and LLM-backed backend integrations.</p>
+        </div>
+        <div class="ai-tool-card" data-scroll-reveal>
+          <div class="ai-tool-icon">🐛</div>
+          <h4>AI-Assisted Debugging</h4>
+          <p>Structured debugging workflows leveraging AI for rapid root cause analysis and refactoring.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ================= CERTIFICATIONS ================= -->
-
+  <!-- ===== CERTIFICATIONS ===== -->
   <section id="certifications">
-    <p class="section__text__p1">Credentials</p>
-    <h1 class="title">Certifications</h1>
+    <div class="section-header" data-scroll-reveal>
+      <span class="section-tag">// 05</span>
+      <h2 class="section-title">Certifications</h2>
+      <div class="section-line"></div>
+    </div>
 
-    <div class="certifications-container">
-      <ul>
-        <li>Responsible Generative AI (Microsoft)</li>
-        <li>Introduction to Large Language Models</li>
-        <li>Artificial Intelligence and Machine Learning Training Course</li>
-        <li>Machine Learning Fundamentals</li>
-        <li>Python and Exploring ChatGPT</li>
-        <li>Creative Thinking: Tools and Techniques</li>
-      </ul>
+    <div class="certs-list" data-scroll-reveal>
+      <div class="cert-item">
+        <span class="cert-bullet">▸</span>
+        <div>
+          <span class="cert-title">Responsible Generative AI</span>
+          <span class="cert-issuer">Microsoft</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <span class="cert-bullet">▸</span>
+        <div>
+          <span class="cert-title">Introduction to Large Language Models</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <span class="cert-bullet">▸</span>
+        <div>
+          <span class="cert-title">Artificial Intelligence and Machine Learning</span>
+          <span class="cert-issuer">Training Course</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <span class="cert-bullet">▸</span>
+        <div>
+          <span class="cert-title">Machine Learning Fundamentals</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <span class="cert-bullet">▸</span>
+        <div>
+          <span class="cert-title">Python and Exploring ChatGPT</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <span class="cert-bullet">▸</span>
+        <div>
+          <span class="cert-title">Creative Thinking: Tools and Techniques</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ================= CONTACT ================= -->
-
+  <!-- ===== CONTACT ===== -->
   <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact</h1>
+    <div class="section-header" data-scroll-reveal>
+      <span class="section-tag">// 06</span>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="section-line"></div>
+    </div>
 
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:abhayganesh154@gmail.com">abhayganesh154@gmail.com</a></p>
-      </div>
-
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/abhaykrishnag/">LinkedIn</a></p>
+    <div class="contact-content" data-scroll-reveal>
+      <p class="contact-sub">Currently open to backend engineering roles and AI-focused projects.</p>
+      <div class="contact-cards">
+        <a href="mailto:abhayganesh154@gmail.com" class="contact-card">
+          <span class="contact-icon-wrap">✉</span>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">abhayganesh154@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/abhaykrishnag/" target="_blank" class="contact-card">
+          <span class="contact-icon-wrap">in</span>
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">abhaykrishnag</span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ================= FOOTER ================= -->
-
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <div class="social-icons">
-      <a href="https://github.com/abhaykrishnag" target="_blank">
-        <img src="./assets/github.png" alt="GitHub" class="social-icon">
-      </a>
-      <a href="https://x.com/abhaykrishnag" target="_blank">
-        <img src="./assets/X.png" alt="X" class="social-icon">
-      </a>
-      <a href="https://www.instagram.com/abhaykrishna.g" target="_blank">
-        <img src="./assets/instagram.png" alt="Instagram" class="social-icon">
-      </a>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="logo-small"><span class="logo-bracket">[</span>AK<span class="logo-bracket">]</span></span>
+        <span class="footer-copy">© 2025 Abhay Krishna</span>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/abhaykrishnag" target="_blank" class="social-link">
+          <img src="./assets/github.png" alt="GitHub" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/abhaykrishna.g" target="_blank" class="social-link">
+          <img src="./assets/instagram.png" alt="Instagram" class="social-icon">
+        </a>
+      </div>
     </div>
-
-    <p>© 2025 Abhay Krishna. All Rights Reserved.</p>
   </footer>
 
   <script src="./script.js"></script>
-
 </body>
 </html>
